@@ -7,7 +7,13 @@
   </head>
   <body>
     <!-- form : 웹서버에 정보를 제출하기 위한 용도 -->
-    <form action="" method="" name="" novalidate autocomplete="">
+    <form
+      action="../link/link1.html"
+      method="post"
+      name=""
+      novalidate
+      autocomplete=""
+    >
       <!-- action : 전송한 정보를 처리할 웹페이지의 url
            method : 서버로 전송할 http 방식(get(기본값), post)
            name : 폼의 이름 지정
@@ -15,8 +21,11 @@
            autocomplete : 자동완성(on(기본), off)
         -->
       <div>
+        <input />
+      </div>
+      <div>
         <label for="username">이름</label>
-        <input type="text" id="username" />
+        <input type="text" id="username" name="username" />
       </div>
       <div>
         <label for="password">비밀번호</label>
@@ -32,11 +41,26 @@
         <label for="">취미</label>
         <!-- checkbox : 여러 개의 선택지를 주고 여러개 선택하기-->
         <input type="checkbox" name="hobby" id="" />영화감상
-        <input type="checkbox" name="hobby" id="" />독서
+        <input type="checkbox" name="hobby" id="" checked />독서
         <input type="checkbox" name="hobby" id="" />운동
         <input type="checkbox" name="hobby" id="" />잠자기
       </div>
-      <input type="button" value="보내기" />
+      <div>
+        <textarea name="" id="" cols="30" rows="10">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eaque, cum non corporis delectus quae atque ab iusto perferendis quam totam praesentium! Nobis nesciunt reiciendis autem nihil quaerat culpa laborum unde sequi explicabo error dolor quos quibusdam, dicta magnam voluptatem animi mollitia necessitatibus alias? Distinctio eos illo architecto, facere soluta id facilis quaerat excepturi ullam autem, libero cupiditate quos tempora perferendis. Aut esse odio, nulla suscipit eius ducimus vitae illo soluta laboriosam similique at repudiandae, magni tenetur! Modi ipsum rem, vel, culpa ipsam praesentium velit, error voluptatem eum sapiente a saepe! Sint error repudiandae quibusdam reprehenderit ad exercitationem quia tempora?
+        </textarea>
+      </div>
+      <div>
+        <select name="" id="">
+          <option value="BMW">BMW</option>
+          <option value="Benz" selected>Benz</option>
+          <option value="HYUNDAI">현대자동차</option>
+          <option value="Kia">기아자동차</option>
+        </select>
+      </div>
+      <input type="button" value="일반버튼" />
+      <input type="submit" value="submit"" />
+      <input type="reset" value="reset" />
     </form>
   </body>
 </html>

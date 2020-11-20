@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #tel {
+        width: 190px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="register.jsp" method="post">
+      <fieldset>
+        <legend><h3>input태그의 주요 속성 연습하기</h3></legend>
+        <div>
+          <label for="">이름</label>
+          <input type="text" name="name" placeholder="이름을 입력하세요" />
+        </div>
+        <div>
+          <label for="">전화번호</label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="전화번호 8자리를 입력하세요"
+            pattern="[0-9]{4}-[0-9]{4}"
+          />
+        </div>
+        <p></p>
+        <div>
+          <label for="">언어선택 : </label>
+          자바 <input type="radio" name="java" id="" /> 오라클
+          <input type="radio" name="" id="" />
+        </div>
+        <div>
+          <label for="">교통수단 > </label>
+          버스 <input type="checkbox" name="" id="" /> 지하철
+          <input type="checkbox" name="" id="" />
+        </div>
+        <br />
+        <div>
+          <label for="">약관</label>
+          <br />
+          <textarea name="" id="" cols="30" rows="10">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, cumque explicabo? Quasi facilis perferendis adipisci error autem expedita quo architecto maiores eligendi cumque magnam, beatae quam. Itaque adipisci ex temporibus iste atque a inventore dicta nostrum praesentium alias dolores sapiente expedita minus fugiat unde officiis nobis explicabo eaque, tenetur rerum culpa sunt? Maxime autem accusamus laborum quas temporibus ipsam sunt corporis eum non, quaerat est ducimus ipsa excepturi eius sit similique aliquam illum suscipit nemo. Fuga, sit quia. Veritatis numquam dolor voluptas enim quae totam nam autem deleniti aliquid, quia inventore hic deserunt modi. Quidem debitis hic porro inventore rerum!</textarea
+          >
+        </div>
+        <input type="checkbox" name="" id="" required /> 약관 동의
+        <p></p>
+        <div>
+          <input type="submit" value="가입하기" name="join" />
+          <input type="submit" value="전체 가입하기" name="alljoin" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
